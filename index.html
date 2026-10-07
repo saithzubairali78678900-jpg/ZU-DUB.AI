@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZU VIDEO DUB.AI - Free Hindi Dubbing Studio</title>
+    <meta name="description" content="Professional AI-powered Hindi video dubbing studio with automatic translation, syllable-matched scripts, realistic Indian voice personas, timeline sync, and dual-track preview." />
+    <meta property="og:title" content="ZU VIDEO DUB.AI - Free Hindi Dubbing Studio" />
+    <meta property="og:description" content="Professional AI-powered Hindi video dubbing studio with automatic translation, syllable-matched scripts, realistic Indian voice personas, timeline sync, and dual-track preview." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      // Prevent browser extensions from breaking on window.fetch getter-only restriction
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          var currentFetch = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() { return currentFetch; },
+            set: function(fn) { currentFetch = fn; }
+          });
+        } catch (e) {}
+
+        // Prevent uncaught errors injected by third-party browser extensions or WebSocket disconnects from halting UI
+        window.addEventListener('error', function(e) {
+          if (e && e.filename && (e.filename.indexOf('chrome-extension://') !== -1 || e.filename.indexOf('moz-extension://') !== -1)) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+          }
+          if (e && e.message && (e.message.indexOf('WebSocket') !== -1 || e.message.indexOf('websocket') !== -1)) {
+            e.preventDefault();
+            return false;
+          }
+        }, true);
+
+        window.addEventListener('unhandledrejection', function(e) {
+          if (e && e.reason) {
+            var msg = (typeof e.reason === 'string' ? e.reason : e.reason.message) || '';
+            if (msg.indexOf('WebSocket') !== -1 || msg.indexOf('websocket') !== -1 || msg.indexOf('@vite/client') !== -1) {
+              e.preventDefault();
+              return false;
+            }
+          }
+        });
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

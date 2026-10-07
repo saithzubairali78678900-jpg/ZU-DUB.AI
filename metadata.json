@@ -1,0 +1,6 @@
+{
+  "name": "VaniSync AI - Free Hindi Dubbing",
+  "description": "Professional AI-powered Hindi video dubbing studio with automatic translation, syllable-matched scripts, realistic Indian voice personas, timeline sync, and dual-track preview.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
